@@ -110,3 +110,19 @@ print(d.values())
 #print keys and values
 print(d.items())
 
+#tuples
+t = (1, 2, 3)
+
+# mylist = [1,2,3]
+print(type(t))
+print(len(t))
+
+t1 = ('one'), 2
+
+print(t1[0])
+print(t1[-1])
+
+t = ('a', 'a', 'a' )
+
+t.count('a')
+print(t.index('a'))
