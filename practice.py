@@ -270,3 +270,87 @@ while x<5:
 
 for num in range(10):
     print(num)
+
+for num in range(3, 10):
+    print(num)
+
+#with step size
+for num in range(0, 10, 2):
+    print(num)
+
+print(list(range(0,11,2)))
+
+#enumerate
+index_count = 0
+
+# for letter in 'abcde':
+#     print('At index {} the letter is {}'.format(index_count, letter))
+#     index_count += 1
+
+word = 'abcde'
+# for letter in word:
+#     print(word[index_count])
+#     index_count += 1
+
+#enumerate automatically counts and prints index
+for item in enumerate(word):
+    print(item)
+
+for index, letter in enumerate(word):
+    print(index)
+    print(letter)
+    print('\n')
+
+my_list1 = [1,2,3,4,5,6]
+my_list2 = ['a', 'b', 'c', 'd']
+my_list3=[100,200,300]
+for item in zip(my_list1, my_list2, my_list3):
+    print(item)
+
+for a,b,c in zip(my_list1, my_list2, my_list3):
+    print(b)
+
+print(list(zip(my_list1, my_list2, my_list3)))
+
+print('x' in [1,2,3])
+
+print('x' in ['x', 'y', 'z'])
+
+print('mykey' in {'mykey': 3456})
+
+d = {'mykey1': 567}
+
+print(567 in d.values())
+
+
+mylist = [10,20,30,40,100]
+
+print(min(mylist))
+print(max(mylist))
+
+from random import shuffle
+my_l = [1,2,3,4,5,6,7,8,9,10]
+shuffle(my_l)
+print(my_l)
+
+
+from random import randint
+# print(randint(0,100))
+my_num = randint(0,10)
+
+print(my_num)
+
+# result = input('Enter a number here: ')
+# print(result)
+
+result1 = input('Enter a number here: ')
+print(result1)
+
+print(type(result1))
+
+print(float(result1))
+
+print(type(result1))
+
+result2 = int(input('Enter a number here: '))
+print(result2)
