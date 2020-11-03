@@ -126,3 +126,147 @@ t = ('a', 'a', 'a' )
 
 t.count('a')
 print(t.index('a'))
+my_set = set()
+
+my_set.add(2)
+
+print(my_set)
+
+l = [1,1,1,2,3,4,2,3,4,5,4,5,5,5,5,5,6,6,6,6,7,7,7,8]
+
+print(set(l))
+print(set('Mississippi'))
+
+print(1 < 2)
+
+print(1 < 2 <3)
+
+print(1 < 2 and 1 < 3)
+
+print(1 == 2 and 1 == 3)
+
+print(1 == 2 or 1 == 3)
+print(not 1 == 2)
+
+hungry = False
+
+if hungry:
+    print('Feed me!')
+else:
+    print("Don't feed me!")
+
+
+lst = [1,2,3,4,5,6,7,8,9]
+
+for item in lst:
+    print(item)
+
+for item in lst:
+    print('hello')
+
+
+for num in lst:
+    #check for even
+    if num%2 == 0:
+        print(num)
+    else:
+        print(f'Odd Number: {num}')
+
+list_sum = 0
+for num in lst:
+    list_sum = list_sum + num
+print(list_sum)
+
+# for num in lst:
+#     list_sum = list_sum + num
+#     print(list_sum)
+
+
+mystrings = 'Hello World'
+
+for letter in mystrings:
+    print(letter)
+
+tup = (1,2,3)
+
+for item in tup:
+    print(item)
+
+my_tup = [(1,2), (3,4), (5,6),(7,8)]
+
+len(my_tup)
+
+for item in my_tup:
+    print(item)
+
+for (a, b) in my_tup:
+    print(a, b)
+
+for (a, b) in my_tup:
+    print(a)
+    print(b)
+
+my_l = [(1,2,3), (5,6,7), (8,9,10)]
+
+for item in my_l:
+    print(item)
+
+for a,b,c in my_l:
+    print(a)
+    print(b)
+    print(c)
+
+
+d = {'k1': 1, 'k2': 2, 'k3': 3}
+
+for item in d.items():
+    print(item)
+
+for key, value in d.items():
+    print(value)
+
+for key, value in d.items():
+    print(key)
+
+x = 0
+
+while x < 5:
+    print(f'The current value of x is {x}')
+    x += 1
+else:
+    print("x is not less than 5")
+
+x = [1,2,3]
+
+for item in x:
+    pass
+
+print('end of my script')
+
+my_string = 'sammy'
+
+# for letter in my_string:
+#     print(letter)
+
+#suppose we don't want to print letter a
+for letter in my_string:
+    if letter == 'a':
+        continue
+    print(letter)
+
+#suppose we don't want to print after a
+for letter in my_string:
+    if letter == 'm':
+        break
+    print(letter)
+
+x=0
+while x<5:
+    if x == 3:
+        break
+    print(x)
+    x += 1
+
+
+for num in range(10):
+    print(num)
