@@ -343,14 +343,72 @@ print(my_num)
 # result = input('Enter a number here: ')
 # print(result)
 
-result1 = input('Enter a number here: ')
-print(result1)
+# result1 = input('Enter a number here: ')
+# print(result1)
 
-print(type(result1))
+# print(type(result1))
 
-print(float(result1))
+# print(float(result1))
 
-print(type(result1))
+# print(type(result1))
 
-result2 = int(input('Enter a number here: '))
-print(result2)
+# result2 = int(input('Enter a number here: '))
+# print(result2)
+
+my_str = 'hello'
+
+my_lst = []
+
+for letter in my_str:
+    my_lst.append(letter)
+
+print(my_lst)
+
+#or in one line we can write
+# my_lst1= [letter for letter in my_str]
+
+# print(my_lst1)
+
+# my_lst2 = [letter for letter in 'word']
+
+# print(my_lst2)
+
+# my_lst31 = [x for x in range(1,10)]
+
+# print(my_lst31)
+
+my_lst3 = [(num**2,num*2,num*num) for num in range(0,11)]
+
+print(my_lst3)
+
+my_lst4 = [num*2 for num in range(0, 11)]
+
+print(my_lst4)
+
+celcius = [0,10,20,34.5]
+farenheit = [((9/5)*temp + 32) for temp in celcius]
+
+print(farenheit)
+
+farenheit = []
+
+for temp in celcius:
+    farenheit.append(((9/5)*temp + 32))
+
+print(farenheit)
+
+result4 = [x if x%2 == 0 else 'ODD' for x in range(0,11)]
+print(result4)
+
+
+mylist = []
+
+for x in [2,4,6]:
+    for y in [100, 200, 300]:
+        mylist.append(x*y)
+
+print(mylist)
+
+mylist1 = [x*y for x in [2,4,6] for y in [100,200, 300]]
+
+print(mylist1)
